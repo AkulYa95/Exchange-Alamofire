@@ -18,7 +18,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        fetchData()
-        fetchDataWithAlamofare()
+        fetchDataWithAlamofire()
         largeTitleEditing()
 
     }
@@ -111,7 +111,7 @@ class TableViewController: UITableViewController {
     }
     // MARK: - FetchData with Alamofare
     
-    func fetchDataWithAlamofare() {
+    func fetchDataWithAlamofire() {
         guard let url = URL(string: stringJson) else { return }
         AF.request(url).validate().responseJSON { dataResponse in
             
