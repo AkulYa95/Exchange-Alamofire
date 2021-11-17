@@ -138,16 +138,10 @@ class TableViewController: UITableViewController {
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-
-                
-
             case .failure(let error):
                 print(error)
             }
             }
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
         }
     
     func getKeys(from valute: [String: Any]) -> [String] {
